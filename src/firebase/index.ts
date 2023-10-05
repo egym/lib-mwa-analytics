@@ -32,6 +32,7 @@ const trackEvent = (eventName: string, eventParams: Record<string, unknown>) => 
     return;
   }
 
+  console.log('log event', analytics);
   logEvent(analytics, eventName, eventParams);
 };
 

@@ -2,6 +2,7 @@ const resolve = require('@rollup/plugin-node-resolve');
 const commonjs = require('@rollup/plugin-commonjs');
 const typescript = require('@rollup/plugin-typescript');
 const { default: dts } = require('rollup-plugin-dts');
+const copy = require('rollup-plugin-copy');
 
 const packageJson = require('./package.json');
 
@@ -24,6 +25,11 @@ module.exports = [
       resolve(),
       commonjs(),
       typescript({ tsconfig: './tsconfig.json', sourceMap: false }),
+      copy({
+        targets: [
+          { src: 'src/scripts/gtag.js', dest: 'dist/mwa-analytics' }
+        ]
+      }),
     ]
   },
   {
