@@ -1,2 +1,2 @@
-export const test = 'qwe2';
+export * from './firebase';
 
