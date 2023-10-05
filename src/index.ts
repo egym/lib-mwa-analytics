@@ -1,2 +1,2 @@
-export const test = 'qwe';
+export const test = 'qwe2';
 
