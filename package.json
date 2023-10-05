@@ -1,0 +1,40 @@
+{
+  "name": "@egym/mwa-analytics",
+  "version": "0.0.1",
+  "description": "",
+  "author": "EGYM",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/egym/lib-mwa-analytics.git"
+  },
+  "homepage": "https://github.com/egym/lib-mwa-analytics#readme",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^24.0.1",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-typescript": "^11.0.0",
+    "@types/react": "^18.0.27",
+    "rollup": "^3.11.0",
+    "rollup-plugin-dts": "^5.1.1",
+    "rollup-plugin-import-css": "^3.1.0",
+    "tslib": "^2.5.0",
+    "typescript": "^4.9.4",
+    "web-vitals": "^3.1.1"
+  },
+  "main": "dist/mwa-logger/cjs/index.js",
+  "module": "dist/mwa-logger/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/mwa-logger/index.d.ts",
+  "bugs": {
+    "url": "https://github.com/egym/lib-mwa-logger/issues"
+  }
+}
