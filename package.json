@@ -1,6 +1,6 @@
 {
   "name": "@egym/mwa-analytics",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "",
   "author": "EGYM",
   "license": "ISC",
@@ -22,6 +22,7 @@
     "@rollup/plugin-typescript": "^11.0.0",
     "@types/react": "^18.0.27",
     "rollup": "^3.11.0",
+    "rollup-plugin-copy": "^3.5.0",
     "rollup-plugin-dts": "^5.1.1",
     "rollup-plugin-import-css": "^3.1.0",
     "tslib": "^2.5.0",

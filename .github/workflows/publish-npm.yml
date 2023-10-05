@@ -20,6 +20,6 @@ jobs:
           scope: '@egym'
       - run: npm install --omit peer
       - run: npm run build
-      - run: npm publish
+      - run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.EGYM_NPM_TOKEN }}
