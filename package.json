@@ -1,6 +1,6 @@
 {
   "name": "@egym/mwa-analytics",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "author": "EGYM",
   "license": "ISC",
@@ -28,13 +28,13 @@
     "typescript": "^4.9.4",
     "web-vitals": "^3.1.1"
   },
-  "main": "dist/mwa-logger/cjs/index.js",
-  "module": "dist/mwa-logger/esm/index.js",
+  "main": "dist/mwa-analytics/cjs/index.js",
+  "module": "dist/mwa-analytics/esm/index.js",
   "files": [
     "dist"
   ],
-  "types": "dist/mwa-logger/index.d.ts",
+  "types": "dist/mwa-analytics/index.d.ts",
   "bugs": {
-    "url": "https://github.com/egym/lib-mwa-logger/issues"
+    "url": "https://github.com/egym/lib-mwa-analytics/issues"
   }
 }

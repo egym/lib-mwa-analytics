@@ -27,9 +27,9 @@ module.exports = [
     ]
   },
   {
-    input: 'dist/mwa-logger/esm/types/index.d.ts',
+    input: 'dist/mwa-analytics/esm/types/index.d.ts',
     output: [
-      { file: 'dist/mwa-logger/index.d.ts', format: 'esm' }
+      { file: 'dist/mwa-analytics/index.d.ts', format: 'esm' }
     ],
     plugins: [dts()]
   }
