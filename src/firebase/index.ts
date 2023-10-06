@@ -4,7 +4,6 @@ import { Analytics, settings, getAnalytics, logEvent } from 'firebase/analytics'
 const CUSTOM_HOSTED_GTAG_URL = '/mwa-analytics/gtag.js';
 const GTAG_URL = 'https://www.googletagmanager.com/gtag/js';
 const FirebaseDataLayerName = 'dataLayerCustomMWATracking';
-const FirebaseGtagName = 'gtagCustomMWATracking';
 
 let app: FirebaseApp | null = null;
 let analytics: Analytics | null = null;
@@ -22,7 +21,6 @@ const loadAnalyticsScript = (firebaseConfig: FirebaseOptions) => {
 const initAnalytics = (firebaseApp: FirebaseApp) => {
   settings({
     dataLayerName: FirebaseDataLayerName,
-    gtagName: FirebaseGtagName,
   });
   analytics = getAnalytics(firebaseApp);
   return analytics;
