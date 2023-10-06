@@ -4,6 +4,7 @@ import { Analytics, settings, getAnalytics, logEvent } from 'firebase/analytics'
 const CUSTOM_HOSTED_GTAG_URL = '/unknown-should-return-error';
 const GTAG_URL = 'https://www.googletagmanager.com/gtag/js';
 const FirebaseDataLayerName = 'dataLayerCustomMWA';
+const FirebasegtagName = 'gtagCustomMWA';
 
 let app: FirebaseApp | null = null;
 let analytics: Analytics | null = null;
@@ -31,6 +32,7 @@ const loadAnalyticsScript = async (firebaseConfig: FirebaseOptions) => {
 const initAnalytics = (firebaseApp: FirebaseApp) => {
   settings({
     dataLayerName: FirebaseDataLayerName,
+    gtagName: FirebasegtagName,
   });
   analytics = getAnalytics(firebaseApp);
   return analytics;
